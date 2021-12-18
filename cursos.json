@@ -1,0 +1,14 @@
+{
+  "cursos": [
+    {
+      "ref_course": 1,
+      "title": "Curso de Programación en Python de Cero a Junior",
+      "lessons": ["Introducción", "Tipos de datos", "Condicionales"]
+    },
+    {
+      "ref_course": 2,
+      "title": "Curso de Programación en JavaScript de Cero a Junior",
+      "lessons": ["Introducción", "Tipos de datos", "Condicionales"]
+    }
+  ]
+}
