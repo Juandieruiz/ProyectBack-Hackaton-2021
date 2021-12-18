@@ -1,0 +1,329 @@
+{
+	"info": {
+		"_postman_id": "2ebdfb59-660d-417b-9809-d661ae57cf08",
+		"name": "OhMyCode - Hackathon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/apiv1/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Demo\",\r\n    \"email\": \"demo@example.com\",\r\n    \"password\": \"123456\",\r\n    \"exp\": 0,\r\n    \"courses\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/apiv1/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apiv1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apiv1/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "user@example.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/apiv1/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apiv1",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apiv1/cursos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJjN2IyMDMyNTgzMzdhZWZhZDUwNjEiLCJpYXQiOjE2Mzk3NDIyODMsImV4cCI6MTYzOTkxNTA4M30.aklNrmhFJSRaA5WN5AwPslTeWyCceMAfJQfRdN7RW2Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/apiv1/cursos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apiv1",
+						"cursos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apiv1/usuarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJjN2IyMDMyNTgzMzdhZWZhZDUwNjEiLCJpYXQiOjE2Mzk3NDIyODMsImV4cCI6MTYzOTkxNTA4M30.aklNrmhFJSRaA5WN5AwPslTeWyCceMAfJQfRdN7RW2Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/apiv1/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apiv1",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apiv1/usuarios/id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJjN2IyMDMyNTgzMzdhZWZhZDUwNjEiLCJpYXQiOjE2Mzk3NDIyODMsImV4cCI6MTYzOTkxNTA4M30.aklNrmhFJSRaA5WN5AwPslTeWyCceMAfJQfRdN7RW2Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "courses",
+							"value": "61bdff9d9e36aecef806f13f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/apiv1/usuarios/61bdff9d9e36aecef806f143",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apiv1",
+						"usuarios",
+						"61bdff9d9e36aecef806f143"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apiv1/usuarios/id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJjN2IyMDMyNTgzMzdhZWZhZDUwNjEiLCJpYXQiOjE2Mzk3NDIyODMsImV4cCI6MTYzOTkxNTA4M30.aklNrmhFJSRaA5WN5AwPslTeWyCceMAfJQfRdN7RW2Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "courses",
+							"value": "61bdff9d9e36aecef806f13f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/apiv1/usuarios/61bdff9d9e36aecef806f143",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apiv1",
+						"usuarios",
+						"61bdff9d9e36aecef806f143"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apiv1/cursos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJjN2IyMDMyNTgzMzdhZWZhZDUwNjEiLCJpYXQiOjE2Mzk3NDIyODMsImV4cCI6MTYzOTkxNTA4M30.aklNrmhFJSRaA5WN5AwPslTeWyCceMAfJQfRdN7RW2Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ref_course",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Curso de Programación en Java de Cero a Junior",
+							"type": "text"
+						},
+						{
+							"key": "lessons",
+							"value": "Introducción",
+							"type": "text"
+						},
+						{
+							"key": "lessons",
+							"value": "Tipos de datos",
+							"type": "text"
+						},
+						{
+							"key": "lessons",
+							"value": "Condicionales",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/apiv1/cursos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apiv1",
+						"cursos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apiv1/cursos/id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJjN2IyMDMyNTgzMzdhZWZhZDUwNjEiLCJpYXQiOjE2Mzk3NDIyODMsImV4cCI6MTYzOTkxNTA4M30.aklNrmhFJSRaA5WN5AwPslTeWyCceMAfJQfRdN7RW2Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "users",
+							"value": "61bdff9d9e36aecef806f143",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/apiv1/cursos/61bdff9d9e36aecef806f13f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apiv1",
+						"cursos",
+						"61bdff9d9e36aecef806f13f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apiv1/cursos/id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJjN2IyMDMyNTgzMzdhZWZhZDUwNjEiLCJpYXQiOjE2Mzk3NDIyODMsImV4cCI6MTYzOTkxNTA4M30.aklNrmhFJSRaA5WN5AwPslTeWyCceMAfJQfRdN7RW2Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "users",
+							"value": "61bdff9d9e36aecef806f143",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/apiv1/cursos/61bdff9d9e36aecef806f13f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apiv1",
+						"cursos",
+						"61bdff9d9e36aecef806f13f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
